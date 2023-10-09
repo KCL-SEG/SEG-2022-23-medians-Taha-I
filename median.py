@@ -10,3 +10,12 @@ while True:
     else:
         break
 print(numbers)
+
+numbers.sort()
+
+if len(numbers)%2 == 1:
+    median = numbers[int(len(numbers)/2)]
+else:
+    median = (numbers[int(len(numbers)/2)] + numbers[(int(len(numbers)/2))-1])/2
+
+print(median)
